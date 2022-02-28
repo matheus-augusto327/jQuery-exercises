@@ -79,13 +79,22 @@
 // })
 
 // -------------------------- Dimensions
-let box = $(".box")
+// let box = $(".box")
 
-box.innerWidth(700)
+// box.innerWidth(700)
 
-box.append(
-    "largura: ", box.width(), "<br>",
-    "largura + padding: ", box.innerWidth(), "<br>",
-    "largura + padding + borda: ", box.outerWidth(), "<br>",
-    "largura + padding + borda + margem: ", box.outerWidth(true), "<br>",
-)
+// box.append(
+//     "largura: ", box.width(), "<br>",
+//     "largura + padding: ", box.innerWidth(), "<br>",
+//     "largura + padding + borda: ", box.outerWidth(), "<br>",
+//     "largura + padding + borda + margem: ", box.outerWidth(true), "<br>",
+// )
+
+// -------------------------- Siblings
+let selected = $("#div1").siblings()
+let selected = $("#div1").nextAll()
+let selected = $("#div1").next()
+let selected = $("#div1").nextUntil("#div3")
+let selected = $("#div1").prev()
+let selected = $("#div1").prevAll()
+console.log(selected)
