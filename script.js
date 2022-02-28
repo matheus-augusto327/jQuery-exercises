@@ -65,8 +65,27 @@
 // $("li").remove("#1, #2")
 
 // -------------------------- Inserting Elements
-$("#lista2").prepend("<li>Prepend</li>")
-$("#lista2").append("<li>Append</li>")
+// $("#lista2").prepend("<li>Prepend</li>")
+// $("#lista2").append("<li>Append</li>")
 
-$("#lista2").before("<li>Before</li>")
-$("#lista2").after("<li>After</li>")
+// $("#lista2").before("<li>Before</li>")
+// $("#lista2").after("<li>After</li>")
+
+// -------------------------- Modifying CSS
+// $("h1").toggleClass("bg-blue")
+// $("h1").css({
+//     "background": "red",
+//     "font-size": "36px"
+// })
+
+// -------------------------- Dimensions
+let box = $(".box")
+
+box.innerWidth(700)
+
+box.append(
+    "largura: ", box.width(), "<br>",
+    "largura + padding: ", box.innerWidth(), "<br>",
+    "largura + padding + borda: ", box.outerWidth(), "<br>",
+    "largura + padding + borda + margem: ", box.outerWidth(true), "<br>",
+)
