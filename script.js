@@ -27,3 +27,11 @@
 // $("#button").click(() => {
 //     $("#square").animate({width: 1000}, 3000)
 // })
+
+// -------------------------- Callbacks
+$("#button").click(() => {
+    $("#square").hide(2000, function callBack() {
+        console.log("Hide")
+        $("#square").show(2000)
+    })
+})
