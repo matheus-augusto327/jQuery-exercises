@@ -91,10 +91,18 @@
 // )
 
 // -------------------------- Siblings
-let selected = $("#div1").siblings()
-let selected = $("#div1").nextAll()
-let selected = $("#div1").next()
-let selected = $("#div1").nextUntil("#div3")
-let selected = $("#div1").prev()
-let selected = $("#div1").prevAll()
+// let selected = $("#div1").siblings()
+// let selected = $("#div1").nextAll()
+// let selected = $("#div1").next()
+// let selected = $("#div1").nextUntil("#div3")
+// let selected = $("#div1").prev()
+// let selected = $("#div1").prevAll()
+// console.log(selected)
+
+// -------------------------- Filter Last First Eq
+let selected = $("#container").children().filter(".div1")
+let selected = $("#container").children().first()
+let selected = $("#container").children().last()
+let selected = $("#container").children().not(".div1")
+let selected = $("#container").children().eq(2)
 console.log(selected)
