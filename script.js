@@ -29,9 +29,16 @@
 // })
 
 // -------------------------- Callbacks
-$("#button").click(() => {
-    $("#square").hide(2000, function callBack() {
-        console.log("Hide")
-        $("#square").show(2000)
-    })
-})
+// $("#button").click(() => {
+//     $("#square").hide(2000, function callBack() {
+//         console.log("Hide")
+//         $("#square").show(2000)
+//     })
+// })
+
+// -------------------------- Selectors
+let lista1 = $("#lista1")
+
+lista1.find(".item1").hide()
+
+console.log(lista1.children())
