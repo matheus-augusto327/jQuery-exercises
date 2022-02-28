@@ -48,8 +48,25 @@
 // console.log(jq)
 
 // -------------------------- Read Elements
-console.log($("#lista1").html())
-console.log($("#lista1").text())
+// console.log($("#lista1").html())
+// console.log($("#lista1").text())
 
-console.log($("#novo").val())
-console.log($("#novo").attr("name"))
+// console.log($("#novo").val())
+// console.log($("#novo").attr("name"))
+
+// -------------------------- Modify Elements
+// $("#lista1").html("<li>Novo Item</li> <li>Novo item</li>")
+// $("li").attr("name", (i, oValue) => {
+//     return oValue + i
+// })
+
+// -------------------------- Removing Elements
+// $("#lista2").empty()
+// $("li").remove("#1, #2")
+
+// -------------------------- Inserting Elements
+$("#lista2").prepend("<li>Prepend</li>")
+$("#lista2").append("<li>Append</li>")
+
+$("#lista2").before("<li>Before</li>")
+$("#lista2").after("<li>After</li>")
