@@ -44,5 +44,12 @@
 // console.log(lista1.children())
 
 // -------------------------- Chaining
-let jq = $("#lista1").slideUp(2000).slideDown(2000).fadeOut(1000)
-console.log(jq)
+// let jq = $("#lista1").slideUp(2000).slideDown(2000).fadeOut(1000)
+// console.log(jq)
+
+// -------------------------- Read Elements
+console.log($("#lista1").html())
+console.log($("#lista1").text())
+
+console.log($("#novo").val())
+console.log($("#novo").attr("name"))
