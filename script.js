@@ -37,8 +37,12 @@
 // })
 
 // -------------------------- Selectors
-let lista1 = $("#lista1")
+// let lista1 = $("#lista1")
 
-lista1.find(".item1").hide()
+// lista1.find(".item1").hide()
 
-console.log(lista1.children())
+// console.log(lista1.children())
+
+// -------------------------- Chaining
+let jq = $("#lista1").slideUp(2000).slideDown(2000).fadeOut(1000)
+console.log(jq)
